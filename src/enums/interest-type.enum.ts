@@ -1,5 +1,3 @@
-import { registerEnumType } from '@nestjs/graphql';
-
 /**
  * Represents user interests.
  * Mirrors the Prisma enum `InterestType`.
@@ -21,8 +19,3 @@ export enum InterestType {
   SUSTAINABLE_FINANCE = 'SUSTAINABLE_FINANCE',
   TECHNOLOGY_AND_INNOVATION = 'TECHNOLOGY_AND_INNOVATION',
 }
-
-registerEnumType(InterestType, {
-  name: 'InterestType',
-  description: 'Represents areas of interest associated with a user.',
-});

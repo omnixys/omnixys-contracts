@@ -1,5 +1,3 @@
-import { registerEnumType } from '@nestjs/graphql';
-
 /**
  * Represents the gender of a person.
  * Mirrors the Prisma enum `GenderType`.
@@ -10,8 +8,3 @@ export enum GenderType {
   DIVERSE = 'DIVERSE',
   UNKNOWN = 'UNKNOWN',
 }
-
-registerEnumType(GenderType, {
-  name: 'GenderType',
-  description: 'Specifies the gender of a person.',
-});

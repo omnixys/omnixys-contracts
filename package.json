@@ -1,6 +1,6 @@
 {
   "name": "@omnixys/contracts",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "type": "module",
   "packageManager": "pnpm@9.12.0",
   "description": "Shared domain contracts for Omnixys microservices",
@@ -13,15 +13,13 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "patch": "pnpm version patch"
   },
   "keywords": [
     "omnixys",
     "contracts",
     "microservices"
   ],
-  "license": "GPL-3.0-or-later",
-  "dependencies": {
-    "@nestjs/graphql": "^13.2.4"
-  }
+  "license": "GPL-3.0-or-later"
 }

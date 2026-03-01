@@ -1,5 +1,3 @@
-import { registerEnumType } from '@nestjs/graphql';
-
 /**
  * Defines the relationship type between two users.
  * Mirrors the Prisma enum `RelationshipType`.
@@ -17,8 +15,3 @@ export enum RelationshipType {
   CHILD = 'CHILD',
   COUSIN = 'COUSIN',
 }
-
-registerEnumType(RelationshipType, {
-  name: 'RelationshipType',
-  description: 'Defines the type of relationship between two users.',
-});
