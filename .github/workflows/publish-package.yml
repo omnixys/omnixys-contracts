@@ -1,8 +1,11 @@
 name: Publish Contracts
 
 on:
-  push:
-    branches: [main]
+  workflow_run:
+    workflows: ['Release']
+    types: [completed]
+  # push:
+  #   branches: [main]
 
 jobs:
   publish:
@@ -26,10 +29,10 @@ jobs:
       - name: Setup npm registry auth
         run: |
           echo "@omnixys:registry=https://npm.pkg.github.com" >> .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${OMNIXYS_TOKEN}" >> .npmrc
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OMNIXYS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - run: pnpm publish --no-git-checks
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OMNIXYS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
