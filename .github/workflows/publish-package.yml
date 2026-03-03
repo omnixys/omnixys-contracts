@@ -2,9 +2,9 @@ name: Publish Contracts
 
 on:
   workflow_run:
-    workflows: ['Release']
-    types: [completed]
-  # push:
+  #   workflows: ['Release']
+  #   types: [completed]
+  # # push:
   #   branches: [main]
 
 jobs:

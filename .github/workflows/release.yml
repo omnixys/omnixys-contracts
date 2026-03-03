@@ -17,6 +17,7 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
+      packages: write
 
     steps:
       - uses: actions/checkout@v6
@@ -49,7 +50,7 @@ jobs:
         run: pnpm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.OMNIXYS_TOKEN }}
+          # NPM_TOKEN: ${{ secrets.OMNIXYS_TOKEN }}
 
       - name: Read version
         run: |
