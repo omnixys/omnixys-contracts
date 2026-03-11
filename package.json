@@ -4,9 +4,17 @@
   "type": "module",
   "private": false,
   "packageManager": "pnpm@9.12.0",
-  "description": "Authentication utilities, guards, decorators and JWT helpers for Omnixys microservices.",
+  "description": "Shared domain contracts for Omnixys microservices",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+
+    "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  
   "files": [
     "dist"
   ],
@@ -22,6 +30,7 @@
     "lint:fix": "biome lint . --write",
     "check": "biome check .",
     "check:fix": "biome check . --write"
+
   },
   "keywords": [
     "omnixys",
@@ -30,7 +39,6 @@
   ],
   "license": "GPL-3.0-or-later",
   "devDependencies": {
-    "@biomejs/biome": "^2.4.6",
     "@commitlint/config-conventional": "^20.4.2",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.1",
