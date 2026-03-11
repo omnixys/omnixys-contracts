@@ -3,6 +3,20 @@
 All notable changes in this project will be documented in this file.
 
 
+## [1.2.1](https://github.com/omnixys/contracts/compare/v1.2.0...v1.2.1) (2026-03-11)
+
+### Description
+
+* **Description:** fix description ([](https://github.com/omnixys/contracts/commit/31ab7ade863c02abc9e3d16d3498276b50de3c4a))
+
+### Other
+
+* **Other:** Merge branch 'main' of https://github.com/omnixys/contracts ([](https://github.com/omnixys/contracts/commit/ebce1dbaa2ef87a56a6b48b4e78038b8cc93703e))
+
+### Package.json
+
+* **Package.json:** Update pnpm-lock.yaml ([](https://github.com/omnixys/contracts/commit/ed303cedbf7d198d340ed41503d41f2469f925e2))
+
 ## [1.2.0](https://github.com/omnixys/contracts/compare/v1.1.1...v1.2.0) (2026-03-11)
 
 ### Enum
