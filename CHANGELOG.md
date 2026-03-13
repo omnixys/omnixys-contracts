@@ -3,6 +3,16 @@
 All notable changes in this project will be documented in this file.
 
 
+## [1.5.0](https://github.com/omnixys/contracts/compare/v1.4.4...v1.5.0) (2026-03-13)
+
+### Enums
+
+* **Enums:** add interest Category Type ([](https://github.com/omnixys/contracts/commit/6e464f3d5ef93878b5c175cb1e3474b20d7ee6c0))
+
+### Other
+
+* **Other:** Update role-type.enum.ts ([](https://github.com/omnixys/contracts/commit/6502b70a1bbb0a0d47dcfeec682359a53032a39d))
+
 ## [1.4.4](https://github.com/omnixys/contracts/compare/v1.4.3...v1.4.4) (2026-03-12)
 
 ### Mail
