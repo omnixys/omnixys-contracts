@@ -1,5 +1,6 @@
 
 // DTO
+export * from './dtos/client-info.type.js'
 export * from './dtos/context.js'
 export * from './dtos/sign-up.js'
 export * from "./dtos/mail.dto.js";
