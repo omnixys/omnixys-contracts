@@ -3,6 +3,12 @@
 All notable changes in this project will be documented in this file.
 
 
+## [1.9.0](https://github.com/omnixys/contracts/compare/v1.8.3...v1.9.0) (2026-03-16)
+
+### Dto
+
+* **Dto:** add log dto ([](https://github.com/omnixys/contracts/commit/521c7fe41d7fef4d5a6c070b769c3be6ff0e3f13))
+
 ## [1.8.3](https://github.com/omnixys/contracts/compare/v1.8.2...v1.8.3) (2026-03-16)
 
 ### Dto
