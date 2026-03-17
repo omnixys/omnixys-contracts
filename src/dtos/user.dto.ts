@@ -14,3 +14,15 @@ export interface UserUpdateDTO {
   lastName?: string;
   email?: string;
 }
+
+export interface UserActionDTO {
+  userId: string;
+}
+
+export interface AddUserIdDTO{}
+
+export interface CreateUserProviderDTO {
+  userId: string;
+  email?: string;
+  username?: string;
+}
