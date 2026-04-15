@@ -11,3 +11,4 @@ export * from './seat.dto.js';
 export * from './notification.dto.js';
 export * from './invitation.dto.js';
 export * from './ticket.dto.js';
+export * from './log.dto.js';
