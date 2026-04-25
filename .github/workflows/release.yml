@@ -27,13 +27,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup npm registry auth
-        run: |
-          echo "@omnixys:registry=https://npm.pkg.github.com" >> .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${OMNIXYS_TOKEN}" >> .npmrc
-        env:
-          OMNIXYS_TOKEN: ${{ secrets.OMNIXYS_TOKEN }}
-
       - name: ⚙️ Enable Corepack (pnpm)
         run: |
           corepack enable
@@ -108,13 +101,6 @@ jobs:
       - uses: pnpm/action-setup@v3
         with:
           version: 10.33.0
-
-      - name: Setup npm registry auth
-        run: |
-          echo "@omnixys:registry=https://npm.pkg.github.com" >> .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${OMNIXYS_TOKEN}" >> .npmrc
-        env:
-          OMNIXYS_TOKEN: ${{ secrets.OMNIXYS_TOKEN }}
 
       - run: pnpm install
       - run: pnpm build
